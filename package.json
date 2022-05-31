@@ -1,0 +1,29 @@
+{
+  "name": "@cxj-npm/define",
+  "version": "1.0.0",
+  "description": "vue3 模板变量定义",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "prerelase": "npm run build && npm version prerelease -m \"release: %s\" && npm publish --access public"
+  },
+  "author": "cscxj",
+  "license": "ISC",
+  "keywords": [
+    "vue",
+    "vue3",
+    "template"
+  ],
+  "devDependencies": {
+    "@babel/types": "^7.18.4",
+    "vue": "^3.2.36"
+  },
+  "dependencies": {
+    "typescript": "^4.7.2"
+  },
+  "files": [
+    "dist/**/*"
+  ]
+}
